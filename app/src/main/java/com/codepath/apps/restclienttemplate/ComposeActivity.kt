@@ -44,7 +44,7 @@ class ComposeActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 // Fires right as the text is being changed (even supplies the range of text)
                 val charsRemaining = 280 - s.length
-                tvCharCount.setText(charsRemaining.toString() + " characters remaining")
+                tvCharCount.setText(charsRemaining.toString())
                 if(charsRemaining <= 0) {
                     tvCharCount.setTextColor(-65536)
                     btnTweet.setEnabled(false)
