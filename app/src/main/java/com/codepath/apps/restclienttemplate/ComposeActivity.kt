@@ -51,6 +51,7 @@ class ComposeActivity : AppCompatActivity() {
                 }
                 else {
                     tvCharCount.setTextColor(-7829368)
+                    btnTweet.setEnabled(true)
                 }
             }
             override fun afterTextChanged(s: Editable) {
